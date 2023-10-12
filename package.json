@@ -2,11 +2,11 @@
   "name": "three-in-row",
   "version": "0.0.0",
   "scripts": {
-    "ng": "three-in-row/node_modules/.bin/ng",
-    "start": "three-in-row/node_modules/.bin/ng serve",
-    "build": "three-in-row/node_modules/.bin/ng build",
-    "watch": "three-in-row/node_modules/.bin/ng build --watch --configuration development",
-    "test": "three-in-row/node_modules/.bin/ng test"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {

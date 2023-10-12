@@ -1,0 +1,27 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 5px;
+
+  .cell-content {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    border: 1px solid #000;
+
+
+    &.red {
+      background: #f00;
+    }
+
+    &.yellow {
+      background: #ffff00;
+    }
+
+    &.green {
+      background: #00ff00;
+    }
+  }
+}
