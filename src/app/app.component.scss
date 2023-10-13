@@ -10,6 +10,7 @@
     height: 40px;
     margin-right: 5px;
     border: 1px solid #000;
+    cursor: pointer;
 
 
     &.red {
@@ -22,6 +23,10 @@
 
     &.green {
       background: #00ff00;
+    }
+
+    &.selected {
+      border-color: aqua;
     }
   }
 }

@@ -3,9 +3,11 @@
 </div>
 
 <div class="map-container">
-  <div class="row" *ngFor="let row of map">
-    <div class="cell" *ngFor="let cell of row">
-      <div class="cell-content" [ngClass]="cell.color">
+  <div class="row" *ngFor="let row of map; let rowIndex = index">
+    <div class="cell" *ngFor="let cell of row; let cellIndex = index">
+      <div class="cell-content"
+           [ngClass]="[selectedCell?.rowIndex === rowIndex && selectedCell?.cellIndex === cellIndex ? 'selected': '', cell.color]"
+           (click)="onCellClick(rowIndex, cellIndex)">
         {{ cell.color  }}
       </div>
     </div>
